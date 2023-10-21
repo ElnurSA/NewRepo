@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{FC50D23A-4F63-4E61-BCEB-817D85536D56}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Practice PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="13" Column="43" />
+      <File FileName="../Service/Services/Interfaces/IProductService.cs" Line="14" Column="38" />
+      <File FileName="../Service/Services/ProductService.cs" Line="24" Column="68" />
+      <File FileName="Controllers/ProductsController.cs" Line="94" Column="27" />
+      <File FileName="../Service/Services/Interfaces/ICategoryService.cs" Line="8" Column="13" />
+      <File FileName="../Service/Services/CategoryService.cs" Line="19" Column="42" />
+      <File FileName="Controllers/CategoryController.cs" Line="21" Column="65" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Practice" expanded="True">
+            <Node name="Domain" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="Practice">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="Service">
+              <Node name="Services">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

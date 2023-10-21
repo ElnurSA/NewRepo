@@ -1,0 +1,57 @@
+﻿using System;
+using Domain.Data;
+using Domain.Models;
+using Service.Services.Interfaces;
+
+namespace Service.Services
+{
+    public class ProductService : IProductService
+    {
+        private readonly AppDbContext _context;
+
+        public ProductService()
+        {
+            _context = new AppDbContext();
+        }
+
+        public Product[] GetAll()
+        {
+            return _context.Products();
+        }
+
+        public Product[] GetAllByCategoryID(int id)
+        {
+            return _context.Products().Where(m => m.CategoryName.Id == id).ToArray();
+        }
+
+        public Product[] GetAllByCategoryName(string categoryName)
+        {
+            return _context.Products().Where(m => m.CategoryName.Name == categoryName).ToArray();
+        }
+
+        public decimal GetAvaragePrice()
+        {
+            var products = _context.Products();
+            int productCount = products.Length;
+            decimal sumOfPrice = products.Sum(m => m.price);
+            return sumOfPrice / productCount;
+        }
+
+        public int GetCount()
+        {
+            var products = _context.Products();
+            return products.Length;
+        }
+
+        public Product[] OrderByDate()
+        {
+            return _context.Products().OrderBy(m => m.CreateDate).ToArray();
+        }
+
+        public Product[] Search(string searchText)
+        {
+            return _context.Products().Where(m => m.Name.Trim().ToLower().Contains(searchText.Trim().ToLower())).ToArray();
+        }
+    }   
+}
+
